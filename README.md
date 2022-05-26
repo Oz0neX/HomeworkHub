@@ -1,5 +1,5 @@
 # HomeworkHub
-A project I worked on for extra credit.
+A project I worked on for extra credit. Built on electron
 
 Must have two environement variables fufilled for fully functioning program, CANVAS_API_TOKEN & CANVAS_API_URL
 
