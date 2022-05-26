@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>HomeworkHub - Work Finder</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./workfinder.css">
+    <script src="../renderer.js"></script>
+</head>
+
+<body>
+    <div class="topnav">
+        <div class="logo">
+            <span class="primaryColor">H</span>w<span class="secondaryColor">H</span>
+        </div>
+        <div class="buttons">
+            <div id="topnav-workfinder" class="button">Work Finder</div>
+            <div class="divider"></div>
+            <div id="topnav-calendar" class="button">Calendar</div>
+            <div class="divider"></div>
+            <div id="topnav-faq" class="button">FAQ</div>
+            <div class="divider"></div>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                <path d="M495.9 166.6C499.2 175.2 496.4 184.9 489.6 191.2L446.3 230.6C447.4 238.9 448 247.4 448 256C448 264.6 447.4 273.1 446.3 281.4L489.6 320.8C496.4 327.1 499.2 336.8 495.9 345.4C491.5 357.3 486.2 368.8 480.2 379.7L475.5 387.8C468.9 398.8 461.5 409.2 453.4 419.1C447.4 426.2 437.7 428.7 428.9 425.9L373.2 408.1C359.8 418.4 344.1 427 329.2 433.6L316.7 490.7C314.7 499.7 307.7 506.1 298.5 508.5C284.7 510.8 270.5 512 255.1 512C241.5 512 227.3 510.8 213.5 508.5C204.3 506.1 197.3 499.7 195.3 490.7L182.8 433.6C167 427 152.2 418.4 138.8 408.1L83.14 425.9C74.3 428.7 64.55 426.2 58.63 419.1C50.52 409.2 43.12 398.8 36.52 387.8L31.84 379.7C25.77 368.8 20.49 357.3 16.06 345.4C12.82 336.8 15.55 327.1 22.41 320.8L65.67 281.4C64.57 273.1 64 264.6 64 256C64 247.4 64.57 238.9 65.67 230.6L22.41 191.2C15.55 184.9 12.82 175.3 16.06 166.6C20.49 154.7 25.78 143.2 31.84 132.3L36.51 124.2C43.12 113.2 50.52 102.8 58.63 92.95C64.55 85.8 74.3 83.32 83.14 86.14L138.8 103.9C152.2 93.56 167 84.96 182.8 78.43L195.3 21.33C197.3 12.25 204.3 5.04 213.5 3.51C227.3 1.201 241.5 0 256 0C270.5 0 284.7 1.201 298.5 3.51C307.7 5.04 314.7 12.25 316.7 21.33L329.2 78.43C344.1 84.96 359.8 93.56 373.2 103.9L428.9 86.14C437.7 83.32 447.4 85.8 453.4 92.95C461.5 102.8 468.9 113.2 475.5 124.2L480.2 132.3C486.2 143.2 491.5 154.7 495.9 166.6V166.6zM256 336C300.2 336 336 300.2 336 255.1C336 211.8 300.2 175.1 256 175.1C211.8 175.1 176 211.8 176 255.1C176 300.2 211.8 336 256 336z"/>
+            </svg>
+        </div>
+    </div>
+    <svg id="titleIcon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+        <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+        <path id="b" d="M0 64C0 28.65 28.65 0 64 0H224V128C224 145.7 238.3 160 256 160H384V198.6C310.1 219.5 256 287.4 256 368C256 427.1 285.1 479.3 329.7 511.3C326.6 511.7 323.3 512 320 512H64C28.65 512 0 483.3 0 448V64zM256 128V0L384 128H256zM288 368C288 288.5 352.5 224 432 224C511.5 224 576 288.5 576 368C576 447.5 511.5 512 432 512C352.5 512 288 447.5 288 368zM432 464C445.3 464 456 453.3 456 440C456 426.7 445.3 416 432 416C418.7 416 408 426.7 408 440C408 453.3 418.7 464 432 464zM368 328C368 336.8 375.2 344 384 344C392.8 344 400 336.8 400 328V321.6C400 316.3 404.3 312 409.6 312H450.1C457.8 312 464 318.2 464 325.9C464 331.1 461.1 335.8 456.6 338.3L424.6 355.1C419.3 357.9 416 363.3 416 369.2V384C416 392.8 423.2 400 432 400C440.8 400 448 392.8 448 384V378.9L471.5 366.6C486.6 358.6 496 342.1 496 325.9C496 300.6 475.4 280 450.1 280H409.6C386.6 280 368 298.6 368 321.6V328z"/>
+    </svg>
+    <div class="pageTitle">Work Finder</div>
+    <div class="contentContainer">
+        <div class="content">
+            First, choose an application below:
+        </div>
+    </div>
+    <div id="applicationMenu">
+        <div class="app">
+            <img src="https://canvas.wfu.edu/app/uploads/sites/12/2019/09/canvas-logo-1024x1020.png">
+            <br>
+            <div>Canvas</div>
+        </div>
+        <div class="app">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Microsoft_Office_OneNote_%282019%E2%80%93present%29.svg/2203px-Microsoft_Office_OneNote_%282019%E2%80%93present%29.svg.png">
+            <br>
+            <div>OneNote</div>
+        </div>
+        <div class="app">
+            <img class="comingSoon" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/coming-soon-2367904-1976493.png">
+            <br>
+            <div>Schoology</div>
+        </div>
+        <div class="app">
+            <img class="comingSoon" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/coming-soon-2367904-1976493.png">
+            <br>
+            <div>Edsby</div>
+        </div>
+        <div class="app">
+            <img class="comingSoon" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/coming-soon-2367904-1976493.png">
+            <br>
+            <div>Moodle</div>
+        </div>
+        <div id="or">OR</div>
+        <div class="button">Add an Assignment</div>
+    </div>
+    <div id="info" class="contentContainer" style="display: none;">
+        <div class="subtitle">For [Application]:</div>
+        <div class="content">Next, select an option</div>
+    </div>
+    <div class="space"></div>
+    <div id="optionsContainer">
+        <div id="Canvas" style="display: none;">
+            <div class="optionsMenu">
+                <div id="one" class="option">Track your assignments: <span id="Canvas-1-status">STATUS</span></div>
+                <div id="two" class="option">Enable auto due-date: <span id="Canvas-2-status">STATUS</span></div>
+                <div id="three" class="option">Track a module</div>
+            </div>
+        </div>
+        <div id="OneNote" style="display: none;">
+            <div class="optionsMenu">
+                <div id="one" class="option">Track a Folder</div>
+                <div id="two" class="option">Enable auto due-date: <span id="OneNote-2-status">STATUS</span></div>
+                <div id="three" class="option">Upload a Document</div>
+            </div>
+        </div>
+        <div id="Canvas-2-1">
+            <div class="contentContainer" style="display: none;">
+                <div class="content">Set a default due date period</div>
+            </div>
+            <!--TODO: Make dropdown-->
+            <div id="2-1-dropdown" class="dropdown">5</div>
+        </div>
+        <div id="OneNote-2-1">
+            <div class="contentContainer" style="display: none;">
+                <div class="content">Set a default due date period</div>
+            </div>
+            <!--TODO: Make dropdown-->
+            <div id="2-1-dropdown" class="dropdown">5</div>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="space"></div>
+    <div class="footer">
+        <x>Let's get it done</x>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

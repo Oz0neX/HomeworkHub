@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HomeworkHub</title>
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- Ionicons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Josefin+Sans">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+    <script type="text/javascript" src="../renderer.js"></script>
+    <script src="index.js"></script>
+    <style>
+        body {
+            margin-top: 0;
+            margin-left: 0;
+            box-sizing: border-box;
+        }
+        
+        .primaryColor {
+            color: #964B00;
+        }
+        
+        .secondaryColor {
+            color: #FF8C00;
+        }
+        
+        .topnav {
+            overflow: hidden;
+            background-color: #1f1f1f;
+            height: 50px;
+            width: 100vw;
+        }
+        
+        .titleContainer {
+            position: absolute;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        
+        .titleContainer x {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 64pt;
+            color: #1f1f1f;
+            margin: 0;
+            line-height: 80px;
+        }
+        
+        .titleContainer * {
+            font-family: 'Inter';
+            font-size: 24pt;
+        }
+        
+        .loadBar {
+            width: 50%;
+            height: 5px;
+            background-color: #1f1f1f;
+            margin-top: 15px;
+            border-radius: 5px;
+            transform: translateX(50%);
+        }
+        
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            background-color: #964B00;
+            color: white;
+            text-align: center;
+            font-size: 12pt;
+            font-family: 'Inter';
+            box-sizing: border-box;
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav"></div>
+    <div class="titleContainer">
+        <x id="title">HwH</x><br>
+        <x1 class="primaryColor">Homework</x1>
+        <x2 class="secondaryColor">Hub</x2>
+        <div class="loadBar"></div>
+    </div>
+    <div class="footer">
+        <x>Let's get it done</x>
+    </div>
+</body>
+
+</html>

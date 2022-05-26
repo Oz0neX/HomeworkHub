@@ -1,0 +1,19 @@
+{
+  "name": "homeworkhub",
+  "version": "1.0.0",
+  "description": "Welcome to HomeworkHub! Get it all done in one place.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "author": "Oz0neX",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^18.2.4"
+  },
+  "dependencies": {
+    "@kth/canvas-api": "^4.2.2",
+    "node-notifier": "^10.0.1"
+  }
+}
